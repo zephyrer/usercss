@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Width & FontSize
 @namespace      zephyrer@github
-@version        1.0.86
+@version        1.0.88
 @description    Adjusting widthes & fontsizes for all
 @author         Efisio Zephyr
 @homepageURL    https://github.com/zephyrer/usercss
@@ -220,5 +220,30 @@
   .RichText figure + p {
     text-align: center;
   }
+}
+
+@-moz-document url-prefix("https://developer.mozilla.org/en-US/docs/"), url-prefix("https://developer.mozilla.org/zh-CN/docs/") {
+	p {
+		font-size: 22pt !important;
+	}
+	li {
+		font-size: 20pt !important;
+	}
+	.center {
+		max-width: 100% !important;
+	}
+	.text-content p {
+		max-width: 100% !important;
+	}
+	.text-content dl,
+	.text-content ol,
+	.text-content ul {
+		max-width: 90% !important;
+	}
+	.text-content pre[class*="language-"],
+	pre.syntaxbox,
+	pre.twopartsyntaxbox {
+	  font-size: 1.8rem !important;
+	}
 }
 
