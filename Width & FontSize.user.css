@@ -1,0 +1,224 @@
+/* ==UserStyle==
+@name           Width & FontSize
+@namespace      zephyrer@github
+@version        1.0.86
+@description    Adjusting widthes & fontsizes for all
+@author         Efisio Zephyr
+@homepageURL    https://github.com/zephyrer/usercss
+@supportURL     https://github.com/zephyrer/usercss/issues
+==/UserStyle== */
+
+
+@-moz-document domain("github.com") {
+   .container {
+       width: 90%;
+    }
+    .markdown-body p,
+    .markdown-body span,
+	.markdown-body pre,
+    .markdown-body a {
+        font-size: 24pt !important;
+    }
+    .markdown-body li {
+        font-size: 22pt !important;
+    }
+    .markdown-body h1,
+	.markdown-body h1 a {
+		font-size: 32pt !important;
+	}
+    .markdown-body h2,
+	.markdown-body h3 a {
+		font-size: 28pt !important;
+	}
+    .markdown-body h3,
+	.markdown-body h3 a {
+		font-size: 26pt !important;
+	}
+    .markdown-body h4,
+	.markdown-body h4 a {
+		font-size: 24pt !important;
+	}
+	.discussion-timeline {
+		width: calc(100% - 220px) !important;
+	}
+}
+
+@-moz-document domain("weibo.com") {
+	div.WB_frame {
+		width: 90% !important;
+	}
+	.WB_main_l,
+	#v6_pl_leftnav_group > div,
+	.WB_left_nav {
+		width: 250px !important;
+	}
+	.WB_left_nav .lev .levtxt {
+		max-width: 250px !important;
+	}
+	.WB_left_nav .lev .ico_block {
+		width: 25px !important;
+	}
+	.WB_frame #plc_main {
+		width: calc(100% - 250px) !important;
+	}
+	.B_discover .WB_frame_c, .WB_main_c {
+		width: calc(100% - 250px) !important;
+	}
+	.WB_main_l a {
+		font-size: 16pt !important;
+	}
+	.WB_detail,
+	.WB_detail * {
+		font-size: 18pt !important;
+		line-height: 1.5em !important;
+	}
+	.WB_from,
+	.WB_from a {
+		font-size: 12pt !important;
+	}
+}
+
+@-moz-document url-prefix("https://support.mozilla.org/en-US/"), url-prefix("https://support.mozilla.org/zh-CN/") {
+	p {
+		font-size: 22pt !important;
+	}
+	li {
+		font-size: 18pt !important;
+	}
+	#main-container {
+		width: 90% !important;
+	}
+	.html-ltr .container_12 .grid_9 {
+		width: calc(100% - 260px) !important;
+	}
+}
+
+@-moz-document url-prefix("https://sspai.com/post/") {
+  .article-detail {
+    width: 90% !important;
+  }
+  .content,
+  .content * {
+    font-size: larger !important;
+    line-height: 1.5em;
+  }
+}
+
+@-moz-document url-prefix("http://mozilla.com.cn/thread") {
+  #wp {
+    width: 90% !important;
+  }
+  #content {
+    width: calc(100% - 320px) !important;
+  }
+  #main-content {
+    width: 100% !important;
+  }
+  .xmtp .z .deanzt {
+    max-width: 100% !important;
+  }
+  #main-content h1,
+  #main-content h1 * {
+    font-size: 26pt !important;
+    line-height: 1.5em;
+  }
+  #main-content h2,
+  #main-content h2 * {
+    font-size: 24pt !important;
+    line-height: 1.5em;
+  }
+  #main-content h3,
+  #main-content h3 * {
+    font-size: 22pt !important;
+    line-height: 1.5em;
+  }
+  #main-content h4,
+  #main-content h4 *,
+  #main-content h5,
+  #main-content h5 * {
+    font-size: 20pt !important;
+    line-height: 1.5em;
+  }
+  #main-content h5,
+  #main-content h5 * {
+    font-family: 楷体 !important;
+  }
+  td[id^='postmessage'],
+  td[id^='postmessage'] a {
+    font-size: 20pt !important;
+  }
+}
+
+@-moz-document domain("amazon.cn") {
+  #iframeContent,
+  #outer_postBodyPS {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+  #bookDesc_iframe_wrapper {
+    max-width: 100% !important;
+  }
+}
+
+@-moz-document url-prefix("https://my.qidian.com/bookcase") {
+  .col2 {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+  .shelf-table-chapter {
+    font-size: 20pt !important;
+  }
+  .qdp-wrapper {
+    width: 90% !important;
+  }
+  .shelf-table-name {
+    max-width: calc(100% - 30px) !important;
+  }
+  .shelf-table-name + a {
+    font-size: 9pt !important;
+    font-family: Britannic, sans-serif !important;
+    border: 2px solid orange !important;
+    padding-right: 5px !important;
+  }
+}
+
+@-moz-document url-prefix("https://www.zhihu.com/question/") {
+  .QuestionHeader-content,
+  .Question-main {
+    width: 90% !important;
+  }
+  .QuestionHeader-main,
+  .Question-mainColumn {
+    width: 100% !important;
+    height: auto !important;
+    overflow-y: auto !important;
+  }
+  .RichText {
+    font-size: 20pt !important;
+    line-height: 1.5em;
+  }
+  .Lottie,.Kok {
+    left: auto !important;
+    right: 2px !important;
+  }
+}
+
+@-moz-document url-prefix("https://zhuanlan.zhihu.com/p/") {
+  .Layout-titleImage--normal {
+    width: 90% !important;
+  }
+  .PostIndex-title {
+    font-size: 28pt !important;
+  }
+  .PostIndex-authorName {
+    font-size: 20pt !important;
+  }
+  .RichText {
+    font-size: 20pt !important;
+    line-height: 1.5em;
+  }
+  .RichText figure + p {
+    text-align: center;
+  }
+}
+
