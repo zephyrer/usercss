@@ -1,13 +1,65 @@
 /* ==UserStyle==
 @name           Width & FontSize
 @namespace      zephyrer@github
-@version        1.0.88
+@version        1.0.94
 @description    Adjusting widthes & fontsizes for all
 @author         Efisio Zephyr
 @homepageURL    https://github.com/zephyrer/usercss
 @supportURL     https://github.com/zephyrer/usercss/issues
 ==/UserStyle== */
 
+
+@-moz-document url-prefix("https://tieba.baidu.com/p/") {
+  .tbui_aside_float_bar {
+    left: auto !important;
+    right: 2px !important;
+  }
+  .l_container {
+    width: calc(100% - 100px) !important;
+  }
+  .content, .pb_content {
+    width: 100% !important;
+  }
+  .left_section {
+    width: calc(100% - 250px) !important;
+  }
+  .core_title_wrap_bright, .l_post_bright  {
+    width: 100% !important;
+  }
+  .d_post_content_main {
+    width: calc(100% - 150px) !important;
+  }
+  div[id^="post_content_"] {
+    font-size: 22pt !important;
+    line-height: 1.5em !important;
+  }
+}
+
+@-moz-document url-prefix("https://tieba.baidu.com/f?") {
+  .tbui_aside_float_bar {
+    left: auto !important;
+    right: 2px !important;
+  }
+  .head_main .head_middle, .head_main .head_content, .content {
+    width: calc(100% - 100px) !important;
+  }
+  .left_section {
+    width: calc(100% - 250px) !important;
+  }
+  .forum_content .main {
+    width: calc(100% - 238px) !important;
+  }
+  .threadlist_title {
+    width: 100% !important;
+    font-size: 22pt !important;
+    line-height: 1.5em !important;
+  }
+  .threadlist_text {
+    width: 100% !important;
+    font-size: 18pt !important;
+    line-height: 1.5em !important;
+  }
+}
 
 @-moz-document domain("github.com") {
    .container {
@@ -150,10 +202,12 @@
 }
 
 @-moz-document domain("amazon.cn") {
-  #iframeContent,
   #outer_postBodyPS {
     font-size: 20pt !important;
     line-height: 1.5em !important;
+    height: auto !important;
+    max-height: auto !important;
+    overflow: auto !important;
   }
   #bookDesc_iframe_wrapper {
     max-width: 100% !important;
@@ -179,6 +233,32 @@
     font-family: Britannic, sans-serif !important;
     border: 2px solid orange !important;
     padding-right: 5px !important;
+  }
+}
+
+@-moz-document url-prefix("https://vipreader.qidian.com/chapter/"), url-prefix("https://read.qidian.com/chapter/") {
+  div.j_readContent,
+  div.j_readContent p {
+    font-size: 32pt !important;
+    line-height: 1.5em !important;
+    font-family: 方正启体_GBK, 腾祥伯当行楷GB18030, "Microsoft Yahei", sans-serif !important;
+    color: rgb(83, 83, 83);
+  }
+  .main-text-wrap .read-content p:first-child {
+    ;
+  }
+  .crumbs-nav,
+  #j_readMainWrap {
+    width: calc(100% - 124px) !important;
+  }
+  #j_leftBarList,
+  .guide-btn-wrap {
+    left: 2px !important;
+    margin-left: 0 !important;
+  }
+  #j_rightBarList {
+    right: 2px !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -247,3 +327,199 @@
 	}
 }
 
+@-moz-document domain("feedly.com") {
+  #feedlyPageFX {
+    max-width: 98% !important;
+  }
+  .fx .col-xl-9 {
+    width: 100% !important;
+  }
+  .fx .entry.u4 {
+    max-width: 100% !important;
+  }
+  .stream h4 {
+    font-size: 26pt !important;
+    font-family: Britannic, sans-serif !important;
+    line-height: 1.5em !important;
+  }
+  .fx .entry.u4 .title {
+    font-size: 22pt !important;
+    line-height: 1.5em !important;
+  }
+  .fx .entry.u4 button {
+    width: 40px !important;
+    height: 40px !important;
+    background-size: 36px 36px !important;
+  }
+  .metadata {
+    font-size: 18pt !important;
+    line-height: 1.5em !important;
+  }
+  .fx .entry.u4 .summary {
+    font-size: 20pt !important;
+    line-height: 1.5em;
+    overflow-y: auto !important;
+    max-height: 100% !important;
+    height: auto !important;
+  }
+  #feedlyTabsHolder {
+    width: 468px !important;
+  }
+  #feedlyTabs .label {
+    font-size: 18pt !important;
+    line-height: 1.5em !important;
+    max-width: 380px !important;
+  }
+  #feedlyTabsHolder .feedIndex .nonEmpty {
+    font-size: 14pt !important;
+    line-height: 1.5em !important;
+    max-width: 380px !important;
+  }
+  #feedlyFrame,
+  #searchBarFX,
+  #headerBarFX {
+    width: calc(100% - 468px) !important;
+    margin-left: 468px !important;
+  }
+  .sliderWidth {
+    width: 90% !important;
+  }
+  .u100Entry,
+  .entryBody {
+    max-width: 100% !important;
+  }
+  .entryBody {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+  .entryBody h2 {
+    font-size: 24pt !important;
+    line-height: 1.5em !important;
+  }
+  .entryBody table {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .entryBody img {
+    width: 70% !important;
+    max-width: 100% !important;
+    margin-left: 15% !important;
+  }
+}
+
+@-moz-document url-prefix("http://www.piaotian.com/html/") {
+  .mainbody {
+    width: 90% !important;
+  }
+  .centent li a {
+    font-size: 18pt !important;
+    line-height: 1.5em !important;
+  }
+  .centent li a:hover {
+    color: red !important;
+    font-weight: 800 !important;
+  }
+}
+
+@-moz-document url-prefix("http://www.piaotian.com/html/") {
+  .mainbody {
+    width: 90% !important;
+  }
+  .centent li a {
+    font-size: 18pt !important;
+    line-height: 1.5em !important;
+  }
+  .centent li a:hover {
+    color: red !important;
+    font-weight: 800 !important;
+  }
+}
+
+@-moz-document regexp("http://www.piaotian.com/html/\\d+/\\d+/\\d+\\.html") {
+  body {
+    width: 90% !important;
+  }
+  #content {
+    font-size: 32pt !important;
+    line-height: 1.5em;
+    font-family: 方正启体_GBK, 方正姚体, "Microsoft Yahei", sans-serif !important;
+    color: navy !important;
+  }
+  #content h1 {
+    font-size: 28pt !important;
+    line-height: 1.5em;
+    font-family: "Microsoft Yahei", sans-serif !important;
+    color: rgb(204, 0, 0) !important;
+  }
+  #content br + br {
+    max-height: 0 !important;
+    height: 0 !important;
+    line-height: 10px !important;
+  }
+}
+
+@-moz-document domain("add0n.com") {
+  .content {
+    max-width: 92% !important;
+  }
+  body, table {
+    font-size: 20pt !important;
+    line-height: 1.5em;
+  }
+}
+
+@-moz-document domain("heartpatrickstudio.com") {
+  p.style3 {
+    font-size: 24pt !important;
+    line-height: 1.5em !important;
+  }
+  table[style*="max-width"] {
+    max-width: 80% !important;
+  }
+}
+
+@-moz-document regexp(".+/forum.php\\?mod=viewthread.+"), regexp(".+/thread-\d+-\d+-\d+.html") {
+  #thread_subject {
+    font-size: 26pt !important;
+    line-height: 1.5em !important;
+  }
+  .t_f, .t_f td {
+    font-size: 20pt !important;
+  }
+  .t_f strong, .t_f td strong {
+    font-size: 20pt !important;
+  }
+}
+
+@-moz-document regexp(".+/forum-\d+.+") {
+  #threadlisttableid tr {
+    height: 60px !important;
+  }
+  .icn + th,
+  .xst {
+    font-size: 22pt !important;
+    line-height: 1.5em !important;
+  }
+}
+
+@-moz-document domain("zhaifu.cc") {
+  .container {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+  }
+  .excerpt h2 {
+    font-size: 24pt !important;
+    line-height: 1.5em !important;
+  }
+  .excerpt .meta, .fa {
+    font-size: 16pt !important;
+  }
+  .excerpt .note {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+  .conad {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+}
