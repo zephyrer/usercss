@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Width & FontSize
 @namespace      zephyrer@github
-@version        1.0.94
+@version        1.0.106
 @description    Adjusting widthes & fontsizes for all
 @author         Efisio Zephyr
 @homepageURL    https://github.com/zephyrer/usercss
@@ -521,5 +521,103 @@
   .conad {
     font-size: 20pt !important;
     line-height: 1.5em !important;
+  }
+}
+
+@-moz-document regexp(".+/viewthread-\d+.+") {
+  #wp {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+  }
+  #thread_subject {
+    font-size: 26pt !important;
+    line-height: 1.5em !important;
+  }
+  .t_f *, .t_f td * {
+    font-size: 20pt !important;
+  }
+  .t_f strong, .t_f td strong {
+    font-size: 28pt !important;
+  }
+}
+
+@-moz-document domain("ycombinator.com") {
+  td.title {
+    font-size: 24pt !important;
+  }
+  td.subtext, a.hnuser {
+    font-size: 16pt !important;
+  }
+  .age {
+    font-size: 14pt !important;
+  }
+  .comment {
+    font-size: 20pt !important;
+  }
+}
+
+@-moz-document domain("microsoft.com") {
+  .article {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+  #content ul li, #content ol > ul li {
+    line-height: 1.5em !important;
+  }
+  div#content {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+  }
+  .article {
+    width: calc(100% - 0px) !important;
+    max-width: calc(100% - 0px) !important;
+  }
+}
+
+@-moz-document domain("mail.google.com") {
+  .gt {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+}
+
+@-moz-document domain("quora.com") {
+  .ContentWrapper {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+  }
+  body.feed_card_on .layout_3col_center {
+    width: calc(100% - 450px) !important;
+  }
+  .rendered_qtext {
+    font-size: 22pt !important;
+    line-height: 1.5em !important;
+  }
+  .layout_2col_side .rendered_qtext {
+    font-size: 16pt !important;
+    line-height: 1.5em !important;
+  }
+  .pagedlist_item {
+    font-size: 14pt !important;
+    line-height: 1.5em !important;
+  }
+  ._layout_text_wrapper {
+    font-size: 16pt !important;
+    line-height: 1.5em !important;
+  }
+  .CredibilitySection, .CredibilityFacts {
+    font-size: 14pt !important;
+    line-height: 1.5em !important;
+  }
+  .u-serif-font-main--regular {
+    font-size: 18pt !important;
+    line-height: 1.5em !important;
+  }
+  .u-serif-font-main--large {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+  .layout_2col_main {
+    width: calc(100% - 450px) !important;
   }
 }
