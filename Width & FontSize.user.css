@@ -9,6 +9,11 @@
 ==/UserStyle== */
 
 
+font[size="1"] {
+  font-size: 22pt !important;
+  line-height: 1.5em !important;
+}
+
 @-moz-document url-prefix("https://tieba.baidu.com/p/") {
   .tbui_aside_float_bar {
     left: auto !important;
@@ -96,37 +101,73 @@
 }
 
 @-moz-document domain("weibo.com") {
-	div.WB_frame {
+	.B_index div.WB_frame {
 		width: 90% !important;
 	}
-	.WB_main_l,
-	#v6_pl_leftnav_group > div,
-	.WB_left_nav {
+	.B_index .WB_main_l,
+	.B_index #v6_pl_leftnav_group > div,
+	.B_index .WB_left_nav {
 		width: 250px !important;
 	}
-	.WB_left_nav .lev .levtxt {
+	.B_index .WB_left_nav .lev .levtxt {
 		max-width: 250px !important;
 	}
-	.WB_left_nav .lev .ico_block {
+	.B_index .WB_left_nav .lev .ico_block {
 		width: 25px !important;
 	}
-	.WB_frame #plc_main {
+	.B_index .WB_frame #plc_main {
 		width: calc(100% - 250px) !important;
 	}
-	.B_discover .WB_frame_c, .WB_main_c {
+	.B_index .B_discover .WB_frame_c, .WB_main_c {
 		width: calc(100% - 250px) !important;
 	}
-	.WB_main_l a {
+	.B_index .WB_main_l a {
 		font-size: 16pt !important;
 	}
-	.WB_detail,
-	.WB_detail * {
+	.B_index .WB_detail,
+	.B_index .WB_detail * {
 		font-size: 18pt !important;
 		line-height: 1.5em !important;
 	}
-	.WB_from,
-	.WB_from a {
+	.B_index .WB_from,
+	.B_index .WB_from a {
 		font-size: 12pt !important;
+	}
+	.B_page .WB_frame {
+	  width: calc(90%) !important;
+	}
+	.B_page .WB_frame #plc_main {
+	  width: calc(100%) !important;
+	}
+	.B_page .WB_frame_c {
+	  width: calc(100% - 340px) !important;
+	}
+	.B_page .WB_frame_a {
+	  width: 100% !important;
+	  margin-right: auto !important;
+	  margin-left: auto !important;
+	}
+	.WB_feed_v3 .WB_media_view, .WB_feed_v3 .WB_media_view .media_show_box li,
+	.B_page > .WB_miniblog div.artwork_box {
+	  width: 100% !important;
+	  height: auto !important;
+	}
+	.WB_feed_v3 .WB_text {
+		font-size: 20pt !important;
+		line-height: 1.5em !important;
+	}
+	.WB_feed_v3 .W_img_face {
+	  width: 32px !important;
+	  height: 32px !important;
+	}
+	.W_icon {
+	  width: 24px !important;
+	  height: 24px !important;
+	}
+	#base_scrollToTop,
+	.WB_timeline {
+	  right: 0 !important;
+	  left: auto !important;
 	}
 }
 
@@ -303,7 +344,7 @@
 }
 
 @-moz-document url-prefix("https://developer.mozilla.org/en-US/docs/"), url-prefix("https://developer.mozilla.org/zh-CN/docs/") {
-	p {
+	p, dd, dt {
 		font-size: 22pt !important;
 	}
 	li {
@@ -478,6 +519,13 @@
   }
 }
 
+@-moz-document regexp(".+/forum.php") {
+  .fl_tb {
+    font-size: 18pt !important;
+    line-height: 1.5em !important;
+  }
+}
+
 @-moz-document regexp(".+/forum.php\\?mod=viewthread.+"), regexp(".+/thread-\d+-\d+-\d+.html") {
   #thread_subject {
     font-size: 26pt !important;
@@ -491,7 +539,7 @@
   }
 }
 
-@-moz-document regexp(".+/forum-\d+.+") {
+@-moz-document regexp(".+/forum-\d+.+"), regexp(".+/forum.php\\?mod=forumdisplay&fid=.+") {
   #threadlisttableid tr {
     height: 60px !important;
   }
@@ -619,5 +667,134 @@
   }
   .layout_2col_main {
     width: calc(100% - 450px) !important;
+  }
+}
+
+@-moz-document domain("soapone.xyz") {
+  #body-wrap > #wrap {
+    width: calc(95%) !important;
+    max-width: calc(95%) !important;
+  }
+  #wpforo-wrap .wpfl-1 .wpforo-topic-title,
+  #wpforo-wrap .wpf_topic_unread, #wpforo-wrap .wpf_topic_unread a {
+    font-size: 18pt !important;
+    line-height: 1.5em !important;
+  }
+  #wpforo-wrap .wpforo-post .wpf-right .wpforo-post-content {
+    font-size: 18pt !important;
+    line-height: 1.5em !important;
+  }
+  #wpforo-wrap .wpforo-post .wpf-right .wpforo-post-content p {
+    font-size: 22pt !important;
+    line-height: 1.5em !important;
+  }
+  #wpforo-wrap .wpforo-post .wpf-right .wpforo-post-content h2 {
+    font-size: 26pt !important;
+    line-height: 1.5em !important;
+  }
+  #wpforo-wrap .wpforo-post .wpf-right .wpforo-post-content .pl {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+}
+
+@-moz-document domain("www.firefox.net.cn") {
+  div[id^='read_'] .editor_content {
+    font-size: 22pt !important;
+    line-height: 1.5em !important;
+  }
+}
+
+
+@-moz-document regexp('https?://.+/forum/topic/.+') {
+  .ipsComment_meta {
+    font-size: 16pt !important;
+    line-height: 1.5em !important;
+  }
+  .cPost_contentWrap .ipsType_normal {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+}
+
+@-moz-document url-prefix("http://book.zongheng.com/chapter/") {
+  #readerFs p {
+    font-size: 28pt !important;
+    line-height: 1.5em !important;
+    font-family: "方正兰亭黑Pro_GB18030", sans-serif !important;
+    font-weight: 100 !important;
+  }
+  .rw_6 {
+    width: calc(100% - 110px) !important;
+  }
+  #uiShortcutButton {
+    left: auto !important;
+    right: 0 !important;
+    margin-left: 0 !important;
+  }
+  #uiDirectoryButton {
+    left: 14px !important;
+    right: auto !important;
+    margin-left: 0 !important;
+  }
+}
+
+@-moz-document regexp("http://home.zongheng.com/.+\\.do") {
+  .wrap {
+    width: 90% !important;
+  }
+  .author_msg {
+    width: calc(100% - 140px) !important;
+  }
+  .myBlock * {
+    font-size: 28px !important;
+  }
+  .myBlock .myMenu {
+    width: 200px !important;
+  }
+  .myBlock .myMain {
+    width: calc(100% - 200px) !important;
+  }
+  #ck_list li {
+    height: 60px !important;
+  }
+  #ck_list li span {
+    margin-top: 10px !important;
+  }
+  .new_chapter .head .time, .new_chapter .head .speed, .new_chapter .main_con .author, .new_chapter .main_con .time, .new_chapter .main_con .speed {
+    width: 140px !important;
+  }
+  .new_chapter .head .handle, .new_chapter .main_con .handle {
+    width: 70px !important;
+  }
+  .new_chapter .head .author, .new_chapter .main_con .author {
+    width: 180px !important;
+  }
+  .new_chapter .head .kind, .new_chapter .main_con .kind {
+    width: 70px !important;
+  }
+  .new_chapter .head .name, .new_chapter .main_con .name {
+    width: 184px !important;
+  }
+  .new_chapter .head .chap, .new_chapter .main_con .chap {
+    width: calc(50%) !important;
+  }
+  .new_chapter .main_con .handle a {
+    font-size: 16px !important;
+  }
+  .new_chapter .head span {
+    text-align: center !important;
+  }
+}
+
+@-moz-document domain("kafan.cn"), domain("pcbeta.com") {
+  #wp {
+    width: 90% !important;
+  }
+  :-moz-any(#comeing_toptb, #coeming_hd, #toptb, #hd) .wp {
+    width: 90% !important;
+  }
+  #wp > div:first-child, #wp > .bekwFHNS, #scbar {
+    width: 100% !important;
   }
 }
