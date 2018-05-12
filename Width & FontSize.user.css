@@ -122,11 +122,11 @@ font[size="1"] {
 		width: calc(100% - 250px) !important;
 	}
 	.B_index .WB_main_l a {
-		font-size: 16pt !important;
+		font-size: 14pt !important;
 	}
 	.B_index .WB_detail,
 	.B_index .WB_detail * {
-		font-size: 18pt !important;
+		font-size: 16pt !important;
 		line-height: 1.5em !important;
 	}
 	.B_index .WB_from,
@@ -152,15 +152,19 @@ font[size="1"] {
 	  width: 100% !important;
 	  height: auto !important;
 	}
-	.WB_feed_v3 .WB_text {
-		font-size: 20pt !important;
+	.WB_feed_v3 .WB_text,
+	.WB_feed_v3 .WB_text .a_topic,
+	.WB_feed_v3 .WB_text a[usercard] {
+		font-size: 16pt !important;
 		line-height: 1.5em !important;
 	}
-	.WB_feed_v3 .W_img_face {
-	  width: 32px !important;
-	  height: 32px !important;
+	.W_icon,
+  i[class*="icon_"] {
+    vertical-align: 2px !important;
+    font-size: 16pt !important;
+    line-height: 1.5em !important;
 	}
-	.W_icon {
+	.WB_feed_v3 .W_img_face {
 	  width: 24px !important;
 	  height: 24px !important;
 	}
@@ -168,6 +172,44 @@ font[size="1"] {
 	.WB_timeline {
 	  right: 0 !important;
 	  left: auto !important;
+	}
+	.PCD_connectlist .member_box .member_wrap .mod_info .title {
+	  height: auto !important;
+	}
+	.PCD_connectlist .member_box .member_wrap .mod_info .title .S_txt1 {
+		font-size: 16pt !important;
+		line-height: 1.5em !important;
+	}
+	.WB_h5video.hv-s1, .WB_h5video.hv-s3-2, .WB_h5video.hv-s3-5 {
+	  min-width: 240px !important;
+	  min-height: 160px !important;
+	  max-width: 1280px !important;
+	  max-height: 960px !important;
+	}
+	.WB_pic .W_icon_tag_v2,
+	div[node-type$="_video_disp"] .con-4 * {
+	  font-size: 12px !important;
+	}
+	.WB_func .WB_handle .S_txt2,
+	.WB_func .WB_handle .S_txt2 em,
+	.WB_func .WB_handle .W_ficon {
+	  vertical-align: middle !important;
+	  font-size: 16px !important;
+	}
+	.WB_func .WB_handle .ficon_praised {
+	  height: auto !important;
+	}
+	:not([yawf-weibo-only]) > .B_page:not([yawf-weibo-only]) .send_weibo_simple .input_simple_wrap .inputfunc_simple_wrap {
+	  width: calc(100% - 60px) !important;
+	}
+	#Pl_Third_Inline__288, .WB_tab_a {
+	  background-color: white !important;
+	}
+	body:not([yawf-weibo-only]) .WB_tab_a .tab_box_a .fr_box {
+	  width: calc(100% - 300px) !important;
+	}
+	body:not([yawf-weibo-only]) .WB_tab_a .tab_box_a_r6 .fr_box {
+	  width: calc(100% - 312px) !important;
 	}
 }
 
@@ -280,7 +322,7 @@ font[size="1"] {
 @-moz-document url-prefix("https://vipreader.qidian.com/chapter/"), url-prefix("https://read.qidian.com/chapter/") {
   div.j_readContent,
   div.j_readContent p {
-    font-size: 32pt !important;
+    font-size: 26pt !important;
     line-height: 1.5em !important;
     font-family: 方正启体_GBK, 腾祥伯当行楷GB18030, "Microsoft Yahei", sans-serif !important;
     color: rgb(83, 83, 83);
@@ -796,5 +838,115 @@ font[size="1"] {
   }
   #wp > div:first-child, #wp > .bekwFHNS, #scbar {
     width: 100% !important;
+  }
+}
+
+@-moz-document domain('wallstreetcn.com') {
+  .layout-main > main {
+    width: calc(94%) !important;
+  }
+  #page-livenews > .livenews {
+    width: calc(100% - 360px) !important;
+  }
+  .wscn-tab-pane div[class^='live-item'] {
+    font-size: 22pt !important;
+    line-height: 1.5em !important;
+  }
+}
+
+@-moz-document url-prefix('https://www.baidu.com/s?wd=') {
+  .c-container h3 {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+  .c-container .c-offset .c-row {
+    font-size: 16pt !important;
+    line-height: 1.5em !important;
+  }
+  .c-container .c-abstract {
+    font-size: 16pt !important;
+    line-height: 1.5em !important;
+  }
+}
+
+/*
+@-moz-document domain('lofter.com') {
+  .g-hdc, .g-hd8, .g-bd, .g-bd2, .g-bd3, .g-bd4, .g-bd5, .g-bd6, .g-bd7, .g-bd8, .g-ft {
+    width: calc(94%) !important;
+  }
+  .g-mn {
+    width: calc(100% - 240px) !important;
+  }
+  .g-bd .g-mn, #comment_frame {
+    width: calc(100%) !important;
+  }
+  .m-mlist .mlistcnt {
+    width: calc(100% - 89px) !important;
+  }
+  .m-mlist .mlistcnt .isay {
+    width: calc(100%) !important;
+    background-color: white !important;
+    background-image: none !important;
+  }
+  .m-cmt .cmtcnt {
+    width: calc(100% - 24px) !important;
+  }
+  .m-cmt .cmthot {
+    width: calc(100% - 44px) !important;
+  }
+  .m-icnt .tit {
+    font-size: 24pt !important;
+    line-height: 1.5em !important;
+  }
+  .cnt .txt, .xtag {
+    font-size: 22pt !important;
+    line-height: 1.5em !important;
+  }
+  .g-doc {
+    width: calc(100% - 44px) !important;
+    padding: 0 22px !important;
+  }
+  .g-bd {
+    width: calc(100%) !important;
+  }
+  .notes .action {
+    width: calc(100% - 30px) !important;
+  }
+  .post-ctc p {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+  .bcmt {
+    font-size: 16pt !important;
+    line-height: 1.5em !important;
+  }
+  .bcmtlstj {
+    font-size: 16pt !important;
+    line-height: 1.5em !important;
+ }
+  .bcmtlsta {
+    padding: 10px 0 !important;
+  }
+  .main .content .text {
+    font-size: 20pt !important;
+    line-height: 1.5em !important;
+  }
+}
+*/
+
+@-moz-document regexp("https://www.booktxt.net/[\d_]+/\d+\.html") {
+  .content_read, .bottem2 {
+    width: calc(100%) !important;
+  }
+  .box_con {
+    width: calc(100% - 80px) !important;
+  }
+  #content {
+    font-family: 方正启体_GBK, 腾祥伯当行楷GB18030, "Microsoft Yahei", sans-serif !important;
+    font-size: 25pt !important;
+  }
+  #bdshare {
+    padding: 5px 0 !important;
+    padding-left: calc((100% - 450px) / 2) !important;
   }
 }
