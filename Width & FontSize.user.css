@@ -949,4 +949,11 @@ font[size="1"] {
     padding: 5px 0 !important;
     padding-left: calc((100% - 450px) / 2) !important;
   }
+  .bottem1 {
+    padding: 5px 0 !important;
+    padding-left: calc((100% - 900px) / 2) !important;
+  }
+  .bottem1 + .lm {
+    display: none !important;
+  }
 }
